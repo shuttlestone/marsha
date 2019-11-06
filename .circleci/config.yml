@@ -201,7 +201,7 @@ jobs:
           DJANGO_AWS_SECRET_ACCESS_KEY: aws-secret-access-key
           DJANGO_CLOUDFRONT_DOMAIN: abc.cloudfront.net
           DJANGO_UPDATE_STATE_SHARED_SECRETS: dummy,secret
-      - image: circleci/postgres:10.3-alpine-ram
+      - image: circleci/postgres:12.0-alpine-ram
         environment:
           POSTGRES_DB: marsha
           POSTGRES_USER: marsha_user
